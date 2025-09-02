@@ -1,0 +1,2516 @@
+[
+  {
+    "id": "Q18",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, A distributed team is suffering from miscommunication and duplicated work. What is the best first step?",
+    "choices": [
+      "Mandate identical working hours across time zones",
+      "Co-create a communication plan (tools, cadence, language norms)",
+      "Limit communication to written channels only",
+      "Require all communication to go through the PM"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Impractical; harms work-life balance.",
+      "B: Correct—tailored comms plan reduces rework.",
+      "C: One channel is too restrictive.",
+      "D: Bottlenecks collaboration and slows decisions."
+    ],
+    "explanation": "Tailor a communication plan to reduce friction and increase clarity for distributed teams.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q15",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "At the daily scrum, Daily scrums are drifting into long status meetings. As a servant-leader, what should you do?",
+    "choices": [
+      "Shorten them to once a week",
+      "Coach the team to keep them timeboxed and focused on plan/blockers",
+      "Replace the event with email updates",
+      "Add more attendees to improve visibility"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reduces cadence; loses transparency.",
+      "B: Correct—coach timeboxing and focus; remove blockers.",
+      "C: Emails lack real-time collaboration.",
+      "D: More people often increases noise, not value."
+    ],
+    "explanation": "Scrums should be short, focused, and timeboxed; coach discipline and remove impediments outside the event.",
+    "reference": "ECO: People-T3 Support team performance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q29",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "Given tight constraints, Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q20",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Given tight constraints, A new high-power, low-interest stakeholder appears late in execution. What is the best next step?",
+    "choices": [
+      "Invite them to all team ceremonies immediately",
+      "Update the stakeholder register and engagement plan before adjusting communications",
+      "Ask for additional budget to handle their requests",
+      "Wait to see if they engage before taking action"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Over-involvement wastes effort and may annoy the stakeholder.",
+      "B: Correct—planful update of register and engagement strategy.",
+      "C: Budget isn’t the immediate constraint.",
+      "D: Passive; risks misalignment and late surprises."
+    ],
+    "explanation": "First, document and plan engagement tailored to power/interest; then adjust communications accordingly.",
+    "reference": "ECO: People-T9 Collaborate with stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q70",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q88",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "match",
+    "prompt": "Under strong executive scrutiny, Match schedule technique to description:",
+    "left": [
+      "Crashing",
+      "Fast-tracking",
+      "Lead",
+      "Lag"
+    ],
+    "right": [
+      "Add resources to shorten duration",
+      "Overlap activities to compress schedule",
+      "Accelerate successor start",
+      "Delay successor start"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Classic schedule compression and dependency adjustments.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q17",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a program blending sprints with stage gates, A key team member is underperforming due to unclear expectations. What should you do first?",
+    "choices": [
+      "Begin formal disciplinary action",
+      "Provide generic training only",
+      "Clarify roles/expectations and agree on support plan",
+      "Reassign their tasks permanently"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Escalation without coaching is premature.",
+      "B: Training may miss the real issue (clarity).",
+      "C: Correct—clarify and support first.",
+      "D: Permanent reassignment may waste potential."
+    ],
+    "explanation": "Clarify expectations and provide targeted support before punitive or structural changes.",
+    "reference": "ECO: People-T6 Build a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q14",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Given tight constraints, A new high-power, low-interest stakeholder appears late in execution. What is the best next step?",
+    "choices": [
+      "Invite them to all team ceremonies immediately",
+      "Update the stakeholder register and engagement plan before adjusting communications",
+      "Ask for additional budget to handle their requests",
+      "Wait to see if they engage before taking action"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Over-involvement wastes effort and may annoy the stakeholder.",
+      "B: Correct—planful update of register and engagement strategy.",
+      "C: Budget isn’t the immediate constraint.",
+      "D: Passive; risks misalignment and late surprises."
+    ],
+    "explanation": "First, document and plan engagement tailored to power/interest; then adjust communications accordingly.",
+    "reference": "ECO: People-T9 Collaborate with stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q11",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "On a Kanban team, A key team member is underperforming due to unclear expectations. What should you do first?",
+    "choices": [
+      "Begin formal disciplinary action",
+      "Provide generic training only",
+      "Clarify roles/expectations and agree on support plan",
+      "Reassign their tasks permanently"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Escalation without coaching is premature.",
+      "B: Training may miss the real issue (clarity).",
+      "C: Correct—clarify and support first.",
+      "D: Permanent reassignment may waste potential."
+    ],
+    "explanation": "Clarify expectations and provide targeted support before punitive or structural changes.",
+    "reference": "ECO: People-T6 Build a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q4",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "As a servant-leader, A senior SME dominates meetings, limiting others’ input. What facilitation technique is best?",
+    "choices": [
+      "Let them speak to avoid conflict",
+      "Use round-robin and a parking lot to balance participation",
+      "Cancel the meeting and follow up by email",
+      "Ask the SME to submit ideas only in writing"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Avoidance; the imbalance persists.",
+      "B: Correct—balanced participation and focus.",
+      "C: Cancelling loses collaboration time.",
+      "D: Over-correction; may reduce collaboration."
+    ],
+    "explanation": "Structured facilitation (round-robin, parking lot) surfaces diverse input while keeping agenda control.",
+    "reference": "ECO: People-T4 Empower team members & stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q46",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "Given tight constraints, A stakeholder emails a 'quick tweak' request during execution. What is the best next step?",
+    "choices": [
+      "Implement quietly since it's minor",
+      "Log it and route through change control",
+      "Ask sponsor to approve via email and proceed",
+      "Reject all minor changes by policy"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Undermines baselines/governance.",
+      "B: Correct—follow the process for evaluation.",
+      "C: Ad-hoc sponsor emails bypass the CCB.",
+      "D: Blanket rejection ignores potential value."
+    ],
+    "explanation": "Even small changes need evaluation and approval through the agreed process.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q62",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, Quality metrics are slightly below threshold; team says it's 'good enough.' What should you do?",
+    "choices": [
+      "Accept to protect the schedule",
+      "Lower thresholds to pass",
+      "Perform root-cause analysis and correct",
+      "Escalate immediately for disciplinary action"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Risks defects and rework later.",
+      "B: Gaming the metric doesn’t improve quality.",
+      "C: Correct—apply RCA and corrective actions.",
+      "D: Escalation may be premature."
+    ],
+    "explanation": "Analyze and correct the process/product to meet agreed thresholds; continuous improvement over 'good enough.'",
+    "reference": "ECO: Process-T7 Manage quality; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q36",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "During execution under strict governance, A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q12",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, A distributed team is suffering from miscommunication and duplicated work. What is the best first step?",
+    "choices": [
+      "Mandate identical working hours across time zones",
+      "Co-create a communication plan (tools, cadence, language norms)",
+      "Limit communication to written channels only",
+      "Require all communication to go through the PM"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Impractical; harms work-life balance.",
+      "B: Correct—tailored comms plan reduces rework.",
+      "C: One channel is too restrictive.",
+      "D: Bottlenecks collaboration and slows decisions."
+    ],
+    "explanation": "Tailor a communication plan to reduce friction and increase clarity for distributed teams.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q37",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "As a servant-leader, Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q60",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q27",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "Under strong executive scrutiny, Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q95",
+    "domain": "Business",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a program blending sprints with stage gates, A regulation changes mid-project affecting product safety. What should you do first?",
+    "choices": [
+      "Wait for an official audit finding",
+      "Assess impact and initiate a change request to ensure compliance",
+      "Accelerate delivery to finish before the rule applies",
+      "Inform stakeholders that the project is exempt"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reactive and risky.",
+      "B: Correct—assess and change via control.",
+      "C: Gaming schedule risks noncompliance.",
+      "D: Exemptions are rare; don’t assume."
+    ],
+    "explanation": "Compliance is mandatory; evaluate impacts and route a change to meet the new requirement.",
+    "reference": "ECO: Business-T1 Compliance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q81",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "Risk analysis reveals high probability/high impact on compliance. Which TWO are appropriate first steps? (Select TWO answers.)",
+    "choices": [
+      "Log it and develop a response strategy",
+      "Implement workaround immediately without analysis",
+      "Perform qualitative analysis and escalate if outside authority",
+      "Ignore until it materializes"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—record and plan.",
+      "B: Workaround is for issues, not future risks.",
+      "C: Correct—qualitative analysis and escalate when needed.",
+      "D: Ignoring risks invites surprises."
+    ],
+    "explanation": "Record, analyze, and plan responses; escalate if scope/authority limits are exceeded.",
+    "reference": "ECO: Process-T3 Assess and manage risks; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q65",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q76",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "Under strong executive scrutiny, A vendor is missing KPIs and causing schedule risk. Which TWO actions should you take first? (Select TWO answers.)",
+    "choices": [
+      "Review contract terms and performance clauses",
+      "Schedule a corrective action meeting with the vendor",
+      "Terminate immediately without notice",
+      "Pay a bonus to motivate recovery"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—know your leverage and obligations.",
+      "B: Correct—agree corrective actions with vendor.",
+      "C: Termination may be premature and risky.",
+      "D: Misaligned incentive."
+    ],
+    "explanation": "Use the contract and collaborative correction before drastic steps; bonuses can reward poor performance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q102",
+    "domain": "Business",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "Under strong executive scrutiny, An organizational agile transition is underway. Which TWO steps support sustainable adoption? (Select TWO answers.)",
+    "choices": [
+      "Pilot agile with coaching and training",
+      "Replace the entire team with experienced agilists",
+      "Update governance to allow incremental delivery",
+      "Hide agile practices to avoid confusion"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—pilot + coaching build capability.",
+      "B: Disruptive and wasteful.",
+      "C: Correct—governance must fit increments.",
+      "D: Secrecy reduces transparency and buy-in."
+    ],
+    "explanation": "Start with pilots and align governance for increments; replacing or hiding harms trust & adoption.",
+    "reference": "ECO: Business-T4 Support organizational change; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q1",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Under strong executive scrutiny, Two senior developers are in conflict over the design; it’s affecting morale. What should the project manager do first?",
+    "choices": [
+      "Escalate to the sponsor for a decision",
+      "Facilitate a private, interest-based discussion to align on criteria",
+      "Hold a vote in the next team meeting to decide",
+      "Replace one developer to end the conflict"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Premature escalation; bypasses team ownership.",
+      "B: Correct—facilitate resolution using principled discussion.",
+      "C: Voting skips analysis and can polarize the team.",
+      "D: Drastic and demotivating without prior coaching."
+    ],
+    "explanation": "Handle conflict at the lowest level: facilitate a constructive, private discussion; align on decision criteria before choosing a solution.",
+    "reference": "ECO: People-T1 Manage conflict; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q9",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, Daily scrums are drifting into long status meetings. As a servant-leader, what should you do?",
+    "choices": [
+      "Shorten them to once a week",
+      "Coach the team to keep them timeboxed and focused on plan/blockers",
+      "Replace the event with email updates",
+      "Add more attendees to improve visibility"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reduces cadence; loses transparency.",
+      "B: Correct—coach timeboxing and focus; remove blockers.",
+      "C: Emails lack real-time collaboration.",
+      "D: More people often increases noise, not value."
+    ],
+    "explanation": "Scrums should be short, focused, and timeboxed; coach discipline and remove impediments outside the event.",
+    "reference": "ECO: People-T3 Support team performance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q92",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "match",
+    "prompt": "Match schedule technique to description:",
+    "left": [
+      "Crashing",
+      "Fast-tracking",
+      "Lead",
+      "Lag"
+    ],
+    "right": [
+      "Add resources to shorten duration",
+      "Overlap activities to compress schedule",
+      "Accelerate successor start",
+      "Delay successor start"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Classic schedule compression and dependency adjustments.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q45",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q71",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "After the plan has been signed off, EV= $120k, PV= $150k, AC= $110k. Which TWO are true? (Select TWO answers.)",
+    "choices": [
+      "SPI < 1 (behind schedule)",
+      "CPI > 1 (under budget)",
+      "SPI > 1 (ahead of schedule)",
+      "CPI < 1 (over budget)"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—behind schedule.",
+      "B: Correct—under budget.",
+      "C: Wrong—SPI>1 would be ahead.",
+      "D: Wrong—CPI<1 means over budget, not here."
+    ],
+    "explanation": "SPI=EV/PV=0.8 (<1 behind); CPI=EV/AC≈1.09 (>1 under budget).",
+    "reference": "ECO: Process-T5 Budget & resources; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q49",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "In a regulated environment, Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q33",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "In a hybrid delivery model, Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q85",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "match",
+    "prompt": "Under strong executive scrutiny, Match the artifact to its process:",
+    "left": [
+      "Change log",
+      "Risk register",
+      "Quality management plan",
+      "Stakeholder engagement plan"
+    ],
+    "right": [
+      "Monitor & Control",
+      "Plan Risk Management",
+      "Plan Quality Management",
+      "Plan Stakeholder Engagement"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Artifacts align to their planning/monitoring processes.",
+    "reference": "ECO: Process-T9 Integrate planning activities; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q31",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "While refining the backlog, Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q69",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "As a servant-leader, Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q21",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "In a phase-gated project, Daily scrums are drifting into long status meetings. As a servant-leader, what should you do?",
+    "choices": [
+      "Shorten them to once a week",
+      "Coach the team to keep them timeboxed and focused on plan/blockers",
+      "Replace the event with email updates",
+      "Add more attendees to improve visibility"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reduces cadence; loses transparency.",
+      "B: Correct—coach timeboxing and focus; remove blockers.",
+      "C: Emails lack real-time collaboration.",
+      "D: More people often increases noise, not value."
+    ],
+    "explanation": "Scrums should be short, focused, and timeboxed; coach discipline and remove impediments outside the event.",
+    "reference": "ECO: People-T3 Support team performance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q22",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "A senior SME dominates meetings, limiting others’ input. What facilitation technique is best?",
+    "choices": [
+      "Let them speak to avoid conflict",
+      "Use round-robin and a parking lot to balance participation",
+      "Cancel the meeting and follow up by email",
+      "Ask the SME to submit ideas only in writing"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Avoidance; the imbalance persists.",
+      "B: Correct—balanced participation and focus.",
+      "C: Cancelling loses collaboration time.",
+      "D: Over-correction; may reduce collaboration."
+    ],
+    "explanation": "Structured facilitation (round-robin, parking lot) surfaces diverse input while keeping agenda control.",
+    "reference": "ECO: People-T4 Empower team members & stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q78",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "Risk analysis reveals high probability/high impact on compliance. Which TWO are appropriate first steps? (Select TWO answers.)",
+    "choices": [
+      "Log it and develop a response strategy",
+      "Implement workaround immediately without analysis",
+      "Perform qualitative analysis and escalate if outside authority",
+      "Ignore until it materializes"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—record and plan.",
+      "B: Workaround is for issues, not future risks.",
+      "C: Correct—qualitative analysis and escalate when needed.",
+      "D: Ignoring risks invites surprises."
+    ],
+    "explanation": "Record, analyze, and plan responses; escalate if scope/authority limits are exceeded.",
+    "reference": "ECO: Process-T3 Assess and manage risks; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q56",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "In a regulated environment, A stakeholder emails a 'quick tweak' request during execution. What is the best next step?",
+    "choices": [
+      "Implement quietly since it's minor",
+      "Log it and route through change control",
+      "Ask sponsor to approve via email and proceed",
+      "Reject all minor changes by policy"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Undermines baselines/governance.",
+      "B: Correct—follow the process for evaluation.",
+      "C: Ad-hoc sponsor emails bypass the CCB.",
+      "D: Blanket rejection ignores potential value."
+    ],
+    "explanation": "Even small changes need evaluation and approval through the agreed process.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q67",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Quality metrics are slightly below threshold; team says it's 'good enough.' What should you do?",
+    "choices": [
+      "Accept to protect the schedule",
+      "Lower thresholds to pass",
+      "Perform root-cause analysis and correct",
+      "Escalate immediately for disciplinary action"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Risks defects and rework later.",
+      "B: Gaming the metric doesn’t improve quality.",
+      "C: Correct—apply RCA and corrective actions.",
+      "D: Escalation may be premature."
+    ],
+    "explanation": "Analyze and correct the process/product to meet agreed thresholds; continuous improvement over 'good enough.'",
+    "reference": "ECO: Process-T7 Manage quality; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q101",
+    "domain": "Business",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "While refining the backlog, An organizational agile transition is underway. Which TWO steps support sustainable adoption? (Select TWO answers.)",
+    "choices": [
+      "Pilot agile with coaching and training",
+      "Replace the entire team with experienced agilists",
+      "Update governance to allow incremental delivery",
+      "Hide agile practices to avoid confusion"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—pilot + coaching build capability.",
+      "B: Disruptive and wasteful.",
+      "C: Correct—governance must fit increments.",
+      "D: Secrecy reduces transparency and buy-in."
+    ],
+    "explanation": "Start with pilots and align governance for increments; replacing or hiding harms trust & adoption.",
+    "reference": "ECO: Business-T4 Support organizational change; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q87",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "match",
+    "prompt": "On a Kanban team, Match the artifact to its process:",
+    "left": [
+      "Change log",
+      "Risk register",
+      "Quality management plan",
+      "Stakeholder engagement plan"
+    ],
+    "right": [
+      "Monitor & Control",
+      "Plan Risk Management",
+      "Plan Quality Management",
+      "Plan Stakeholder Engagement"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Artifacts align to their planning/monitoring processes.",
+    "reference": "ECO: Process-T9 Integrate planning activities; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q57",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "On a Kanban team, Quality metrics are slightly below threshold; team says it's 'good enough.' What should you do?",
+    "choices": [
+      "Accept to protect the schedule",
+      "Lower thresholds to pass",
+      "Perform root-cause analysis and correct",
+      "Escalate immediately for disciplinary action"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Risks defects and rework later.",
+      "B: Gaming the metric doesn’t improve quality.",
+      "C: Correct—apply RCA and corrective actions.",
+      "D: Escalation may be premature."
+    ],
+    "explanation": "Analyze and correct the process/product to meet agreed thresholds; continuous improvement over 'good enough.'",
+    "reference": "ECO: Process-T7 Manage quality; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q23",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "While refining the backlog, A key team member is underperforming due to unclear expectations. What should you do first?",
+    "choices": [
+      "Begin formal disciplinary action",
+      "Provide generic training only",
+      "Clarify roles/expectations and agree on support plan",
+      "Reassign their tasks permanently"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Escalation without coaching is premature.",
+      "B: Training may miss the real issue (clarity).",
+      "C: Correct—clarify and support first.",
+      "D: Permanent reassignment may waste potential."
+    ],
+    "explanation": "Clarify expectations and provide targeted support before punitive or structural changes.",
+    "reference": "ECO: People-T6 Build a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q16",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Under strong executive scrutiny, A senior SME dominates meetings, limiting others’ input. What facilitation technique is best?",
+    "choices": [
+      "Let them speak to avoid conflict",
+      "Use round-robin and a parking lot to balance participation",
+      "Cancel the meeting and follow up by email",
+      "Ask the SME to submit ideas only in writing"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Avoidance; the imbalance persists.",
+      "B: Correct—balanced participation and focus.",
+      "C: Cancelling loses collaboration time.",
+      "D: Over-correction; may reduce collaboration."
+    ],
+    "explanation": "Structured facilitation (round-robin, parking lot) surfaces diverse input while keeping agenda control.",
+    "reference": "ECO: People-T4 Empower team members & stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q61",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a hybrid delivery model, A stakeholder emails a 'quick tweak' request during execution. What is the best next step?",
+    "choices": [
+      "Implement quietly since it's minor",
+      "Log it and route through change control",
+      "Ask sponsor to approve via email and proceed",
+      "Reject all minor changes by policy"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Undermines baselines/governance.",
+      "B: Correct—follow the process for evaluation.",
+      "C: Ad-hoc sponsor emails bypass the CCB.",
+      "D: Blanket rejection ignores potential value."
+    ],
+    "explanation": "Even small changes need evaluation and approval through the agreed process.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q41",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "match",
+    "prompt": "Given tight constraints, Match the agile role to the primary responsibility:",
+    "left": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers"
+    ],
+    "right": [
+      "Maximize product value via backlog",
+      "Remove impediments; coach team",
+      "Build a potentially shippable increment"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "explanation": "Classic Scrum responsibilities: PO=value/backlog; SM=coaching/impediments; Devs=build increment.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q43",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "Given tight constraints, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q55",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q83",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "While refining the backlog, EV= $120k, PV= $150k, AC= $110k. Which TWO are true? (Select TWO answers.)",
+    "choices": [
+      "SPI < 1 (behind schedule)",
+      "CPI > 1 (under budget)",
+      "SPI > 1 (ahead of schedule)",
+      "CPI < 1 (over budget)"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—behind schedule.",
+      "B: Correct—under budget.",
+      "C: Wrong—SPI>1 would be ahead.",
+      "D: Wrong—CPI<1 means over budget, not here."
+    ],
+    "explanation": "SPI=EV/PV=0.8 (<1 behind); CPI=EV/AC≈1.09 (>1 under budget).",
+    "reference": "ECO: Process-T5 Budget & resources; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q13",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "While refining the backlog, Two senior developers are in conflict over the design; it’s affecting morale. What should the project manager do first?",
+    "choices": [
+      "Escalate to the sponsor for a decision",
+      "Facilitate a private, interest-based discussion to align on criteria",
+      "Hold a vote in the next team meeting to decide",
+      "Replace one developer to end the conflict"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Premature escalation; bypasses team ownership.",
+      "B: Correct—facilitate resolution using principled discussion.",
+      "C: Voting skips analysis and can polarize the team.",
+      "D: Drastic and demotivating without prior coaching."
+    ],
+    "explanation": "Handle conflict at the lowest level: facilitate a constructive, private discussion; align on decision criteria before choosing a solution.",
+    "reference": "ECO: People-T1 Manage conflict; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q64",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q51",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a hybrid delivery model, A stakeholder emails a 'quick tweak' request during execution. What is the best next step?",
+    "choices": [
+      "Implement quietly since it's minor",
+      "Log it and route through change control",
+      "Ask sponsor to approve via email and proceed",
+      "Reject all minor changes by policy"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Undermines baselines/governance.",
+      "B: Correct—follow the process for evaluation.",
+      "C: Ad-hoc sponsor emails bypass the CCB.",
+      "D: Blanket rejection ignores potential value."
+    ],
+    "explanation": "Even small changes need evaluation and approval through the agreed process.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q97",
+    "domain": "Business",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "During a sprint review, A regulation changes mid-project affecting product safety. What should you do first?",
+    "choices": [
+      "Wait for an official audit finding",
+      "Assess impact and initiate a change request to ensure compliance",
+      "Accelerate delivery to finish before the rule applies",
+      "Inform stakeholders that the project is exempt"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reactive and risky.",
+      "B: Correct—assess and change via control.",
+      "C: Gaming schedule risks noncompliance.",
+      "D: Exemptions are rare; don’t assume."
+    ],
+    "explanation": "Compliance is mandatory; evaluate impacts and route a change to meet the new requirement.",
+    "reference": "ECO: Business-T1 Compliance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q38",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "While refining the backlog, A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q3",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, Daily scrums are drifting into long status meetings. As a servant-leader, what should you do?",
+    "choices": [
+      "Shorten them to once a week",
+      "Coach the team to keep them timeboxed and focused on plan/blockers",
+      "Replace the event with email updates",
+      "Add more attendees to improve visibility"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reduces cadence; loses transparency.",
+      "B: Correct—coach timeboxing and focus; remove blockers.",
+      "C: Emails lack real-time collaboration.",
+      "D: More people often increases noise, not value."
+    ],
+    "explanation": "Scrums should be short, focused, and timeboxed; coach discipline and remove impediments outside the event.",
+    "reference": "ECO: People-T3 Support team performance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q68",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q80",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "Given tight constraints, EV= $120k, PV= $150k, AC= $110k. Which TWO are true? (Select TWO answers.)",
+    "choices": [
+      "SPI < 1 (behind schedule)",
+      "CPI > 1 (under budget)",
+      "SPI > 1 (ahead of schedule)",
+      "CPI < 1 (over budget)"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—behind schedule.",
+      "B: Correct—under budget.",
+      "C: Wrong—SPI>1 would be ahead.",
+      "D: Wrong—CPI<1 means over budget, not here."
+    ],
+    "explanation": "SPI=EV/PV=0.8 (<1 behind); CPI=EV/AC≈1.09 (>1 under budget).",
+    "reference": "ECO: Process-T5 Budget & resources; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q98",
+    "domain": "Business",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, Benefits forecast has dropped due to market shifts. What should the PM do?",
+    "choices": [
+      "Update the benefits management plan and inform governance",
+      "Ignore; benefits are not the PM’s concern",
+      "Reduce scope quietly to protect ROI",
+      "Freeze changes until after go-live"
+    ],
+    "correct_index": 0,
+    "rationales": [
+      "A: Correct—update and advise governance.",
+      "B: PM enables value; can’t ignore benefits.",
+      "C: Quiet scope cuts are unethical.",
+      "D: Freezing changes may harm value."
+    ],
+    "explanation": "Update benefits outlook, consult governance for decisions; PM stewards value delivery.",
+    "reference": "ECO: Business-T2 Benefits & value; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q2",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a hybrid delivery model, A new high-power, low-interest stakeholder appears late in execution. What is the best next step?",
+    "choices": [
+      "Invite them to all team ceremonies immediately",
+      "Update the stakeholder register and engagement plan before adjusting communications",
+      "Ask for additional budget to handle their requests",
+      "Wait to see if they engage before taking action"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Over-involvement wastes effort and may annoy the stakeholder.",
+      "B: Correct—planful update of register and engagement strategy.",
+      "C: Budget isn’t the immediate constraint.",
+      "D: Passive; risks misalignment and late surprises."
+    ],
+    "explanation": "First, document and plan engagement tailored to power/interest; then adjust communications accordingly.",
+    "reference": "ECO: People-T9 Collaborate with stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q86",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "match",
+    "prompt": "At the daily scrum, Match schedule technique to description:",
+    "left": [
+      "Crashing",
+      "Fast-tracking",
+      "Lead",
+      "Lag"
+    ],
+    "right": [
+      "Add resources to shorten duration",
+      "Overlap activities to compress schedule",
+      "Accelerate successor start",
+      "Delay successor start"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Classic schedule compression and dependency adjustments.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q32",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "In a program blending sprints with stage gates, A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q35",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "Velocity has declined for two sprints. Which TWO actions are most appropriate for the Scrum Master? (Select TWO answers.)",
+    "choices": [
+      "Extend the sprint length to give more time",
+      "Run a focused retrospective to find root causes",
+      "Remove identified impediments or escalate them",
+      "Push the team to commit to more points next sprint"
+    ],
+    "correct_indices": [
+      1,
+      2
+    ],
+    "rationales": [
+      "A: Changes cadence without solving problems.",
+      "B: Correct—inspect to discover causes.",
+      "C: Correct—remove or escalate impediments.",
+      "D: Pressure without analysis is counterproductive."
+    ],
+    "explanation": "Use inspect-and-adapt: identify causes via retrospective, then remove impediments. Commitment inflation ignores root causes.",
+    "reference": "ECO: People-T7 Remove impediments; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q6",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "Given tight constraints, A distributed team is suffering from miscommunication and duplicated work. What is the best first step?",
+    "choices": [
+      "Mandate identical working hours across time zones",
+      "Co-create a communication plan (tools, cadence, language norms)",
+      "Limit communication to written channels only",
+      "Require all communication to go through the PM"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Impractical; harms work-life balance.",
+      "B: Correct—tailored comms plan reduces rework.",
+      "C: One channel is too restrictive.",
+      "D: Bottlenecks collaboration and slows decisions."
+    ],
+    "explanation": "Tailor a communication plan to reduce friction and increase clarity for distributed teams.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q91",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "match",
+    "prompt": "Given tight constraints, Match the artifact to its process:",
+    "left": [
+      "Change log",
+      "Risk register",
+      "Quality management plan",
+      "Stakeholder engagement plan"
+    ],
+    "right": [
+      "Monitor & Control",
+      "Plan Risk Management",
+      "Plan Quality Management",
+      "Plan Stakeholder Engagement"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Artifacts align to their planning/monitoring processes.",
+    "reference": "ECO: Process-T9 Integrate planning activities; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q93",
+    "domain": "Business",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, A regulation changes mid-project affecting product safety. What should you do first?",
+    "choices": [
+      "Wait for an official audit finding",
+      "Assess impact and initiate a change request to ensure compliance",
+      "Accelerate delivery to finish before the rule applies",
+      "Inform stakeholders that the project is exempt"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Reactive and risky.",
+      "B: Correct—assess and change via control.",
+      "C: Gaming schedule risks noncompliance.",
+      "D: Exemptions are rare; don’t assume."
+    ],
+    "explanation": "Compliance is mandatory; evaluate impacts and route a change to meet the new requirement.",
+    "reference": "ECO: Business-T1 Compliance; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q8",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a hybrid delivery model, A new high-power, low-interest stakeholder appears late in execution. What is the best next step?",
+    "choices": [
+      "Invite them to all team ceremonies immediately",
+      "Update the stakeholder register and engagement plan before adjusting communications",
+      "Ask for additional budget to handle their requests",
+      "Wait to see if they engage before taking action"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Over-involvement wastes effort and may annoy the stakeholder.",
+      "B: Correct—planful update of register and engagement strategy.",
+      "C: Budget isn’t the immediate constraint.",
+      "D: Passive; risks misalignment and late surprises."
+    ],
+    "explanation": "First, document and plan engagement tailored to power/interest; then adjust communications accordingly.",
+    "reference": "ECO: People-T9 Collaborate with stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q72",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "On a Kanban team, Risk analysis reveals high probability/high impact on compliance. Which TWO are appropriate first steps? (Select TWO answers.)",
+    "choices": [
+      "Log it and develop a response strategy",
+      "Implement workaround immediately without analysis",
+      "Perform qualitative analysis and escalate if outside authority",
+      "Ignore until it materializes"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—record and plan.",
+      "B: Workaround is for issues, not future risks.",
+      "C: Correct—qualitative analysis and escalate when needed.",
+      "D: Ignoring risks invites surprises."
+    ],
+    "explanation": "Record, analyze, and plan responses; escalate if scope/authority limits are exceeded.",
+    "reference": "ECO: Process-T3 Assess and manage risks; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q34",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "During execution under strict governance, A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q24",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, A distributed team is suffering from miscommunication and duplicated work. What is the best first step?",
+    "choices": [
+      "Mandate identical working hours across time zones",
+      "Co-create a communication plan (tools, cadence, language norms)",
+      "Limit communication to written channels only",
+      "Require all communication to go through the PM"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Impractical; harms work-life balance.",
+      "B: Correct—tailored comms plan reduces rework.",
+      "C: One channel is too restrictive.",
+      "D: Bottlenecks collaboration and slows decisions."
+    ],
+    "explanation": "Tailor a communication plan to reduce friction and increase clarity for distributed teams.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q94",
+    "domain": "Business",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Given tight constraints, Benefits forecast has dropped due to market shifts. What should the PM do?",
+    "choices": [
+      "Update the benefits management plan and inform governance",
+      "Ignore; benefits are not the PM’s concern",
+      "Reduce scope quietly to protect ROI",
+      "Freeze changes until after go-live"
+    ],
+    "correct_index": 0,
+    "rationales": [
+      "A: Correct—update and advise governance.",
+      "B: PM enables value; can’t ignore benefits.",
+      "C: Quiet scope cuts are unethical.",
+      "D: Freezing changes may harm value."
+    ],
+    "explanation": "Update benefits outlook, consult governance for decisions; PM stewards value delivery.",
+    "reference": "ECO: Business-T2 Benefits & value; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q74",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "Given tight constraints, EV= $120k, PV= $150k, AC= $110k. Which TWO are true? (Select TWO answers.)",
+    "choices": [
+      "SPI < 1 (behind schedule)",
+      "CPI > 1 (under budget)",
+      "SPI > 1 (ahead of schedule)",
+      "CPI < 1 (over budget)"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—behind schedule.",
+      "B: Correct—under budget.",
+      "C: Wrong—SPI>1 would be ahead.",
+      "D: Wrong—CPI<1 means over budget, not here."
+    ],
+    "explanation": "SPI=EV/PV=0.8 (<1 behind); CPI=EV/AC≈1.09 (>1 under budget).",
+    "reference": "ECO: Process-T5 Budget & resources; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q89",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "match",
+    "prompt": "With agile teams under predictive governance, Match the artifact to its process:",
+    "left": [
+      "Change log",
+      "Risk register",
+      "Quality management plan",
+      "Stakeholder engagement plan"
+    ],
+    "right": [
+      "Monitor & Control",
+      "Plan Risk Management",
+      "Plan Quality Management",
+      "Plan Stakeholder Engagement"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Artifacts align to their planning/monitoring processes.",
+    "reference": "ECO: Process-T9 Integrate planning activities; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q10",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, A senior SME dominates meetings, limiting others’ input. What facilitation technique is best?",
+    "choices": [
+      "Let them speak to avoid conflict",
+      "Use round-robin and a parking lot to balance participation",
+      "Cancel the meeting and follow up by email",
+      "Ask the SME to submit ideas only in writing"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Avoidance; the imbalance persists.",
+      "B: Correct—balanced participation and focus.",
+      "C: Cancelling loses collaboration time.",
+      "D: Over-correction; may reduce collaboration."
+    ],
+    "explanation": "Structured facilitation (round-robin, parking lot) surfaces diverse input while keeping agenda control.",
+    "reference": "ECO: People-T4 Empower team members & stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q100",
+    "domain": "Business",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "In a hybrid delivery model, An organizational agile transition is underway. Which TWO steps support sustainable adoption? (Select TWO answers.)",
+    "choices": [
+      "Pilot agile with coaching and training",
+      "Replace the entire team with experienced agilists",
+      "Update governance to allow incremental delivery",
+      "Hide agile practices to avoid confusion"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—pilot + coaching build capability.",
+      "B: Disruptive and wasteful.",
+      "C: Correct—governance must fit increments.",
+      "D: Secrecy reduces transparency and buy-in."
+    ],
+    "explanation": "Start with pilots and align governance for increments; replacing or hiding harms trust & adoption.",
+    "reference": "ECO: Business-T4 Support organizational change; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q39",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "match",
+    "prompt": "On a Kanban team, Match the agile role to the primary responsibility:",
+    "left": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers"
+    ],
+    "right": [
+      "Maximize product value via backlog",
+      "Remove impediments; coach team",
+      "Build a potentially shippable increment"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "explanation": "Classic Scrum responsibilities: PO=value/backlog; SM=coaching/impediments; Devs=build increment.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q26",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "At the daily scrum, A new high-power, low-interest stakeholder appears late in execution. What is the best next step?",
+    "choices": [
+      "Invite them to all team ceremonies immediately",
+      "Update the stakeholder register and engagement plan before adjusting communications",
+      "Ask for additional budget to handle their requests",
+      "Wait to see if they engage before taking action"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Over-involvement wastes effort and may annoy the stakeholder.",
+      "B: Correct—planful update of register and engagement strategy.",
+      "C: Budget isn’t the immediate constraint.",
+      "D: Passive; risks misalignment and late surprises."
+    ],
+    "explanation": "First, document and plan engagement tailored to power/interest; then adjust communications accordingly.",
+    "reference": "ECO: People-T9 Collaborate with stakeholders; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q47",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "With agile teams under predictive governance, Quality metrics are slightly below threshold; team says it's 'good enough.' What should you do?",
+    "choices": [
+      "Accept to protect the schedule",
+      "Lower thresholds to pass",
+      "Perform root-cause analysis and correct",
+      "Escalate immediately for disciplinary action"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Risks defects and rework later.",
+      "B: Gaming the metric doesn’t improve quality.",
+      "C: Correct—apply RCA and corrective actions.",
+      "D: Escalation may be premature."
+    ],
+    "explanation": "Analyze and correct the process/product to meet agreed thresholds; continuous improvement over 'good enough.'",
+    "reference": "ECO: Process-T7 Manage quality; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q19",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, Two senior developers are in conflict over the design; it’s affecting morale. What should the project manager do first?",
+    "choices": [
+      "Escalate to the sponsor for a decision",
+      "Facilitate a private, interest-based discussion to align on criteria",
+      "Hold a vote in the next team meeting to decide",
+      "Replace one developer to end the conflict"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Premature escalation; bypasses team ownership.",
+      "B: Correct—facilitate resolution using principled discussion.",
+      "C: Voting skips analysis and can polarize the team.",
+      "D: Drastic and demotivating without prior coaching."
+    ],
+    "explanation": "Handle conflict at the lowest level: facilitate a constructive, private discussion; align on decision criteria before choosing a solution.",
+    "reference": "ECO: People-T1 Manage conflict; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q77",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "Under strong executive scrutiny, EV= $120k, PV= $150k, AC= $110k. Which TWO are true? (Select TWO answers.)",
+    "choices": [
+      "SPI < 1 (behind schedule)",
+      "CPI > 1 (under budget)",
+      "SPI > 1 (ahead of schedule)",
+      "CPI < 1 (over budget)"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—behind schedule.",
+      "B: Correct—under budget.",
+      "C: Wrong—SPI>1 would be ahead.",
+      "D: Wrong—CPI<1 means over budget, not here."
+    ],
+    "explanation": "SPI=EV/PV=0.8 (<1 behind); CPI=EV/AC≈1.09 (>1 under budget).",
+    "reference": "ECO: Process-T5 Budget & resources; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q25",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, Two senior developers are in conflict over the design; it’s affecting morale. What should the project manager do first?",
+    "choices": [
+      "Escalate to the sponsor for a decision",
+      "Facilitate a private, interest-based discussion to align on criteria",
+      "Hold a vote in the next team meeting to decide",
+      "Replace one developer to end the conflict"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Premature escalation; bypasses team ownership.",
+      "B: Correct—facilitate resolution using principled discussion.",
+      "C: Voting skips analysis and can polarize the team.",
+      "D: Drastic and demotivating without prior coaching."
+    ],
+    "explanation": "Handle conflict at the lowest level: facilitate a constructive, private discussion; align on decision criteria before choosing a solution.",
+    "reference": "ECO: People-T1 Manage conflict; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q73",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "In a phase-gated project, A vendor is missing KPIs and causing schedule risk. Which TWO actions should you take first? (Select TWO answers.)",
+    "choices": [
+      "Review contract terms and performance clauses",
+      "Schedule a corrective action meeting with the vendor",
+      "Terminate immediately without notice",
+      "Pay a bonus to motivate recovery"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—know your leverage and obligations.",
+      "B: Correct—agree corrective actions with vendor.",
+      "C: Termination may be premature and risky.",
+      "D: Misaligned incentive."
+    ],
+    "explanation": "Use the contract and collaborative correction before drastic steps; bonuses can reward poor performance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q30",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q84",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "Given tight constraints, Risk analysis reveals high probability/high impact on compliance. Which TWO are appropriate first steps? (Select TWO answers.)",
+    "choices": [
+      "Log it and develop a response strategy",
+      "Implement workaround immediately without analysis",
+      "Perform qualitative analysis and escalate if outside authority",
+      "Ignore until it materializes"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—record and plan.",
+      "B: Workaround is for issues, not future risks.",
+      "C: Correct—qualitative analysis and escalate when needed.",
+      "D: Ignoring risks invites surprises."
+    ],
+    "explanation": "Record, analyze, and plan responses; escalate if scope/authority limits are exceeded.",
+    "reference": "ECO: Process-T3 Assess and manage risks; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q96",
+    "domain": "Business",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "At the daily scrum, Benefits forecast has dropped due to market shifts. What should the PM do?",
+    "choices": [
+      "Update the benefits management plan and inform governance",
+      "Ignore; benefits are not the PM’s concern",
+      "Reduce scope quietly to protect ROI",
+      "Freeze changes until after go-live"
+    ],
+    "correct_index": 0,
+    "rationales": [
+      "A: Correct—update and advise governance.",
+      "B: PM enables value; can’t ignore benefits.",
+      "C: Quiet scope cuts are unethical.",
+      "D: Freezing changes may harm value."
+    ],
+    "explanation": "Update benefits outlook, consult governance for decisions; PM stewards value delivery.",
+    "reference": "ECO: Business-T2 Benefits & value; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q28",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "In a program blending sprints with stage gates, A conflict between a developer and tester is delaying delivery. Which TWO actions should the PM take first? (Select TWO answers.)",
+    "choices": [
+      "Facilitate a private mediation to clarify interests",
+      "Reassign one person immediately to different work",
+      "Agree on working agreements for handoffs/definitions",
+      "Escalate to HR for formal intervention"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—mediate privately to align interests.",
+      "B: Premature; may not address the root cause.",
+      "C: Correct—agreements reduce friction.",
+      "D: HR escalation is a last resort."
+    ],
+    "explanation": "Resolve at the lowest level: mediate and set clear working agreements (e.g., DoD, handoffs).",
+    "reference": "ECO: People-T12 Define team ground rules; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q58",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a hybrid delivery model, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q42",
+    "domain": "People",
+    "approach": "Agile",
+    "item_type": "match",
+    "prompt": "At the daily scrum, Match the agile role to the primary responsibility:",
+    "left": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers"
+    ],
+    "right": [
+      "Maximize product value via backlog",
+      "Remove impediments; coach team",
+      "Build a potentially shippable increment"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "explanation": "Classic Scrum responsibilities: PO=value/backlog; SM=coaching/impediments; Devs=build increment.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q75",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "In a program blending sprints with stage gates, Risk analysis reveals high probability/high impact on compliance. Which TWO are appropriate first steps? (Select TWO answers.)",
+    "choices": [
+      "Log it and develop a response strategy",
+      "Implement workaround immediately without analysis",
+      "Perform qualitative analysis and escalate if outside authority",
+      "Ignore until it materializes"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—record and plan.",
+      "B: Workaround is for issues, not future risks.",
+      "C: Correct—qualitative analysis and escalate when needed.",
+      "D: Ignoring risks invites surprises."
+    ],
+    "explanation": "Record, analyze, and plan responses; escalate if scope/authority limits are exceeded.",
+    "reference": "ECO: Process-T3 Assess and manage risks; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q54",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Given tight constraints, Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q59",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "After the plan has been signed off, Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q90",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "match",
+    "prompt": "In a phase-gated project, Match schedule technique to description:",
+    "left": [
+      "Crashing",
+      "Fast-tracking",
+      "Lead",
+      "Lag"
+    ],
+    "right": [
+      "Add resources to shorten duration",
+      "Overlap activities to compress schedule",
+      "Accelerate successor start",
+      "Delay successor start"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "explanation": "Classic schedule compression and dependency adjustments.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q79",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "multi",
+    "question": "While refining the backlog, A vendor is missing KPIs and causing schedule risk. Which TWO actions should you take first? (Select TWO answers.)",
+    "choices": [
+      "Review contract terms and performance clauses",
+      "Schedule a corrective action meeting with the vendor",
+      "Terminate immediately without notice",
+      "Pay a bonus to motivate recovery"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—know your leverage and obligations.",
+      "B: Correct—agree corrective actions with vendor.",
+      "C: Termination may be premature and risky.",
+      "D: Misaligned incentive."
+    ],
+    "explanation": "Use the contract and collaborative correction before drastic steps; bonuses can reward poor performance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q48",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "Given tight constraints, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q7",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "In a regulated environment, Two senior developers are in conflict over the design; it’s affecting morale. What should the project manager do first?",
+    "choices": [
+      "Escalate to the sponsor for a decision",
+      "Facilitate a private, interest-based discussion to align on criteria",
+      "Hold a vote in the next team meeting to decide",
+      "Replace one developer to end the conflict"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Premature escalation; bypasses team ownership.",
+      "B: Correct—facilitate resolution using principled discussion.",
+      "C: Voting skips analysis and can polarize the team.",
+      "D: Drastic and demotivating without prior coaching."
+    ],
+    "explanation": "Handle conflict at the lowest level: facilitate a constructive, private discussion; align on decision criteria before choosing a solution.",
+    "reference": "ECO: People-T1 Manage conflict; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q5",
+    "domain": "People",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "With approved baselines in place, A key team member is underperforming due to unclear expectations. What should you do first?",
+    "choices": [
+      "Begin formal disciplinary action",
+      "Provide generic training only",
+      "Clarify roles/expectations and agree on support plan",
+      "Reassign their tasks permanently"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Escalation without coaching is premature.",
+      "B: Training may miss the real issue (clarity).",
+      "C: Correct—clarify and support first.",
+      "D: Permanent reassignment may waste potential."
+    ],
+    "explanation": "Clarify expectations and provide targeted support before punitive or structural changes.",
+    "reference": "ECO: People-T6 Build a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q50",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "Under strong executive scrutiny, Cost-plus contract is proposed by a vendor. What should you ensure first?",
+    "choices": [
+      "Upfront payment terms",
+      "Clear scope definition and strong change control",
+      "Shorter schedule to motivate efficiency",
+      "Waive audits to build trust"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Payment terms matter but aren’t primary risk control.",
+      "B: Correct—tight scope & change control are essential.",
+      "C: Time pressure may degrade quality.",
+      "D: Removing audits increases risk."
+    ],
+    "explanation": "Cost risk shifts to buyer; control scope and changes via clear definitions and governance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q44",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Critical path is slipping; several noncritical tasks have float. What is the best response?",
+    "choices": [
+      "Extend the deadline to reduce pressure",
+      "Fast-track critical activities; exploit float on noncritical tasks",
+      "Add a generic 15% buffer to all tasks",
+      "Re-estimate the entire schedule from scratch"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Changes deadline without solving path issues.",
+      "B: Correct—optimize critical path and float usage.",
+      "C: Arbitrary padding isn’t analysis.",
+      "D: Full re-estimate wastes time unless data is invalid."
+    ],
+    "explanation": "Focus on critical path (fast-track) and use float on noncritical work to protect milestone dates.",
+    "reference": "ECO: Process-T6 Manage schedule; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q63",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "Given tight constraints, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q53",
+    "domain": "Process",
+    "approach": "Predictive",
+    "item_type": "single",
+    "question": "In a regulated environment, A requested change fixes a defect but adds scope. What should you do next?",
+    "choices": [
+      "Implement immediately to satisfy the customer",
+      "Reject because scope creep is not allowed",
+      "Assess impacts and submit a formal change request",
+      "Ask the team to absorb it within current baselines"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Bypasses governance; risk to baselines.",
+      "B: Auto-rejecting may ignore value.",
+      "C: Correct—evaluate and route via change control.",
+      "D: Hidden changes erode control and trust."
+    ],
+    "explanation": "Follow integrated change control: analyze impacts and submit a CR; only implement if approved.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q40",
+    "domain": "People",
+    "approach": "Hybrid",
+    "item_type": "match",
+    "prompt": "Given tight constraints, Match the agile role to the primary responsibility:",
+    "left": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers"
+    ],
+    "right": [
+      "Maximize product value via backlog",
+      "Remove impediments; coach team",
+      "Build a potentially shippable increment"
+    ],
+    "pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "explanation": "Classic Scrum responsibilities: PO=value/backlog; SM=coaching/impediments; Devs=build increment.",
+    "reference": "ECO: People-T2 Lead a team; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q82",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "multi",
+    "question": "Under strong executive scrutiny, A vendor is missing KPIs and causing schedule risk. Which TWO actions should you take first? (Select TWO answers.)",
+    "choices": [
+      "Review contract terms and performance clauses",
+      "Schedule a corrective action meeting with the vendor",
+      "Terminate immediately without notice",
+      "Pay a bonus to motivate recovery"
+    ],
+    "correct_indices": [
+      0,
+      1
+    ],
+    "rationales": [
+      "A: Correct—know your leverage and obligations.",
+      "B: Correct—agree corrective actions with vendor.",
+      "C: Termination may be premature and risky.",
+      "D: Misaligned incentive."
+    ],
+    "explanation": "Use the contract and collaborative correction before drastic steps; bonuses can reward poor performance.",
+    "reference": "ECO: Process-T11 Manage procurement; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q52",
+    "domain": "Process",
+    "approach": "Agile",
+    "item_type": "single",
+    "question": "As a servant-leader, Quality metrics are slightly below threshold; team says it's 'good enough.' What should you do?",
+    "choices": [
+      "Accept to protect the schedule",
+      "Lower thresholds to pass",
+      "Perform root-cause analysis and correct",
+      "Escalate immediately for disciplinary action"
+    ],
+    "correct_index": 2,
+    "rationales": [
+      "A: Risks defects and rework later.",
+      "B: Gaming the metric doesn’t improve quality.",
+      "C: Correct—apply RCA and corrective actions.",
+      "D: Escalation may be premature."
+    ],
+    "explanation": "Analyze and correct the process/product to meet agreed thresholds; continuous improvement over 'good enough.'",
+    "reference": "ECO: Process-T7 Manage quality; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q66",
+    "domain": "Process",
+    "approach": "Hybrid",
+    "item_type": "single",
+    "question": "In a program blending sprints with stage gates, A stakeholder emails a 'quick tweak' request during execution. What is the best next step?",
+    "choices": [
+      "Implement quietly since it's minor",
+      "Log it and route through change control",
+      "Ask sponsor to approve via email and proceed",
+      "Reject all minor changes by policy"
+    ],
+    "correct_index": 1,
+    "rationales": [
+      "A: Undermines baselines/governance.",
+      "B: Correct—follow the process for evaluation.",
+      "C: Ad-hoc sponsor emails bypass the CCB.",
+      "D: Blanket rejection ignores potential value."
+    ],
+    "explanation": "Even small changes need evaluation and approval through the agreed process.",
+    "reference": "ECO: Process-T10 Manage project changes; PMBOK 6/7; Agile Practice Guide"
+  },
+  {
+    "id": "Q99",
+    "domain": "Business",
+    "approach": "Predictive",
+    "item_type": "multi",
+    "question": "In a regulated environment, An organizational agile transition is underway. Which TWO steps support sustainable adoption? (Select TWO answers.)",
+    "choices": [
+      "Pilot agile with coaching and training",
+      "Replace the entire team with experienced agilists",
+      "Update governance to allow incremental delivery",
+      "Hide agile practices to avoid confusion"
+    ],
+    "correct_indices": [
+      0,
+      2
+    ],
+    "rationales": [
+      "A: Correct—pilot + coaching build capability.",
+      "B: Disruptive and wasteful.",
+      "C: Correct—governance must fit increments.",
+      "D: Secrecy reduces transparency and buy-in."
+    ],
+    "explanation": "Start with pilots and align governance for increments; replacing or hiding harms trust & adoption.",
+    "reference": "ECO: Business-T4 Support organizational change; PMBOK 6/7; Agile Practice Guide"
+  }
+]
