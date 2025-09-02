@@ -1,7 +1,109 @@
 // @ts-nocheck
 import React, { useEffect, useMemo, useState } from "react";
-import { parseCSV, shuffle, toCSV, download } from "./lib/trainerUtils";
 
+/**
+ * PMP Practice Trainer — Single file (JS only)
+ * - All utils (CSV parser, shuffle, CSV export) included here
+ * - JSON-first, CSV fallback
+ * - Minimal, exam-like UI with Practice/Exam modes
+ */
+
+// ---------- Utils (all in this file) ----------
+function shuffle(arr, seed) {
+  const a = [...arr];
+  let s = seed ?? Math.floor(Math.random() * 1e9);
+  const rand = () => { s ^= s << 13; s ^= s >>> 17; s ^= s << 5; return (s >>> 0) / 4294967296; };
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function toCSV(rows) {
+  return rows
+    .map(r =>
+      r
+        .map(cell =>
+          /[",\n]/.test(String(cell))
+            ? '"' + String(cell).replace(/"/g, '""') + '"'
+            : String(cell)
+        )
+        .join(",")
+    )
+    .join("\n");
+}
+
+function download(filename, text) {
+  const blob = new Blob([text], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename; a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Robust CSV parser (quotes, commas, CRLF, newlines-in-fields)
+function parseCSVStream(text) {
+  const rows = [], len = text.length; let i = 0, row = [], cur = "", inQ = false;
+  while (i < len) {
+    const ch = text[i];
+    if (ch === '"') {
+      if (inQ && i + 1 < len && text[i + 1] === '"') { cur += '"'; i += 2; continue; }
+      inQ = !inQ; i++; continue;
+    }
+    if (!inQ && ch === ',') { row.push(cur); cur = ""; i++; continue; }
+    if (!inQ && (ch === '\n' || ch === '\r')) {
+      row.push(cur); cur = "";
+      if (row.length && row.some(c => c !== "")) rows.push(row);
+      row = [];
+      if (ch === '\r' && i + 1 < len && text[i + 1] === '\n') i += 2; else i++;
+      continue;
+    }
+    cur += ch; i++;
+  }
+  if (cur.length > 0 || row.length > 0) {
+    row.push(cur);
+    if (row.length && row.some(c => c !== "")) rows.push(row);
+  }
+  return rows;
+}
+
+function parseCSV(text) {
+  const table = parseCSVStream(text);
+  if (!table.length) return [];
+  const header = table[0].map(h => h.trim().toLowerCase());
+  const idxOf = name => header.indexOf(name);
+  const qi = idxOf("id"), di = idxOf("domain"), qq = idxOf("question"),
+        ai = idxOf("a"), bi = idxOf("b"), ci = idxOf("c"), dd = idxOf("d"),
+        co = idxOf("correct"), ex = idxOf("explanation"), rf = idxOf("reference");
+  const required = [di, qq, ai, bi, ci, dd, co];
+  if (required.some(i => i < 0)) return [];
+  const allowedDomains = new Set(["People", "Process", "Business", "Agile"]);
+  const letterToIndex = (s) => {
+    const m = { a:0, b:1, c:2, d:3 };
+    const t = String(s).trim().toLowerCase();
+    if (t in m) return m[t];
+    if (/^[0-3]$/.test(t)) return Number(t);
+  };
+  return table.slice(1).reduce((out, row, r) => {
+    if (!row || row.every(c => !c || !String(c).trim())) return out;
+    const ans = letterToIndex(row[co] || "");
+    const dom = (row[di] || "").trim();
+    if (ans === undefined || !allowedDomains.has(dom)) return out;
+    out.push({
+      id: (qi >= 0 ? (row[qi] || "").trim() : "") || `U${r + 1}`,
+      domain: dom,
+      question: (row[qq] || "").trim(),
+      choices: [(row[ai]||"").trim(), (row[bi]||"").trim(), (row[ci]||"").trim(), (row[dd]||"").trim()],
+      answerIndex: ans,
+      explanation: ex >= 0 ? (row[ex] || "") : "",
+      reference: rf >= 0 ? (row[rf] || "") : "",
+    });
+    return out;
+  }, []);
+}
+
+// ---------- App (UI) ----------
 const DOMAINS = ["People", "Process", "Business", "Agile"];
 
 function isV21(q) {
@@ -29,27 +131,28 @@ export default function App() {
   const [flagged, setFlagged] = useState({});
   const [questionStart, setQuestionStart] = useState(null);
 
-  // Load default bank: /questions.json -> /questions.csv
+  // Load default bank from /questions.json then fallback to /questions.csv
   useEffect(() => {
     (async () => {
       try {
         const rj = await fetch("/questions.json", { cache: "no-store" });
         if (rj.ok) {
-          const data = await rj.json();
-          if (Array.isArray(data) && data.length) { setAllQuestions(data); return; }
+          const arr = await rj.json();
+          if (Array.isArray(arr) && arr.length) { setAllQuestions(arr); return; }
         }
       } catch {}
       try {
         const rc = await fetch("/questions.csv", { cache: "no-store" });
         if (rc.ok) {
-          const text = await rc.text();
-          const qs = parseCSV(text);
+          const txt = await rc.text();
+          const qs = parseCSV(txt);
           if (qs.length) setAllQuestions(qs);
         }
       } catch {}
     })();
   }, []);
 
+  // Filter by domain
   const filtered = useMemo(
     () => allQuestions.filter(q => q && q.domain && selectedDomains[q.domain]),
     [allQuestions, selectedDomains]
@@ -77,13 +180,12 @@ export default function App() {
   }
 
   function recordResult(isCorrect) {
-    const question = q;
-    if (!question) return;
+    if (!q) return;
     const tries = Math.max(1, chosenHistory.length || 1);
     setResults(prev => ({
       ...prev,
-      [question.id]: {
-        id: question.id,
+      [q.id]: {
+        id: q.id,
         firstTryCorrect: !!(isCorrect && tries === 1),
         tries,
         timeMs: questionStart ? Date.now() - questionStart : 0,
@@ -177,19 +279,17 @@ export default function App() {
       <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur">
         <div className="mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
           <h1 className="text-xl font-semibold tracking-tight">PMP Practice Trainer</h1>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={exportSummary}
-              className="text-sm px-3 py-1.5 rounded-md bg-neutral-900 text-white hover:opacity-90 disabled:opacity-40"
-              disabled={!finished && !started}
-            >
-              Export
-            </button>
-          </div>
+          <button
+            onClick={exportSummary}
+            className="text-sm px-3 py-1.5 rounded-md bg-neutral-900 text-white hover:opacity-90 disabled:opacity-40"
+            disabled={!finished && !started}
+          >
+            Export
+          </button>
         </div>
         {started && (
           <div className="h-1 w-full bg-neutral-200">
-            <div className="h-1 bg-blue-600 transition-all" style={{ width: `${progressPct}%` }} />
+            <div className="h-1 bg-blue-600 transition-all" style={{ width: `${Math.max(1, progressPct)}%` }} />
           </div>
         )}
       </header>
@@ -216,23 +316,11 @@ export default function App() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium">Session size</label>
-                  <input
-                    type="number"
-                    value={sessionSize}
-                    min={10}
-                    max={allQuestions.length || 9999}
-                    onChange={e=>setSessionSize(Number(e.target.value))}
-                    className="w-full border rounded-md px-2 py-1.5"
-                  />
+                  <input type="number" value={sessionSize} min={10} max={allQuestions.length || 9999} onChange={e=>setSessionSize(Number(e.target.value))} className="w-full border rounded-md px-2 py-1.5" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium">Shuffle seed</label>
-                  <input
-                    type="number"
-                    value={seed}
-                    onChange={e=>setSeed(Number(e.target.value))}
-                    className="w-full border rounded-md px-2 py-1.5"
-                  />
+                  <input type="number" value={seed} onChange={e=>setSeed(Number(e.target.value))} className="w-full border rounded-md px-2 py-1.5" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium">Domains</label>
@@ -241,9 +329,7 @@ export default function App() {
                       <button
                         key={d}
                         onClick={()=>setSelectedDomains(s => ({ ...s, [d]: !s[d] }))}
-                        className={`px-3 py-1.5 rounded-full border text-sm ${
-                          selectedDomains[d] ? "bg-neutral-900 text-white" : "bg-white"
-                        }`}
+                        className={`px-3 py-1.5 rounded-full border text-sm ${selectedDomains[d] ? 'bg-neutral-900 text-white' : 'bg-white'}`}
                       >
                         {d}
                       </button>
@@ -253,11 +339,7 @@ export default function App() {
               </div>
             </div>
             <div className="mt-6">
-              <button
-                onClick={startSession}
-                className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:opacity-90 disabled:opacity-40"
-                disabled={filtered.length === 0}
-              >
+              <button onClick={startSession} className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:opacity-90 disabled:opacity-40" disabled={filtered.length === 0}>
                 Start
               </button>
             </div>
@@ -269,54 +351,34 @@ export default function App() {
           <section className="rounded-2xl border bg-white p-6 shadow-sm">
             <div className="flex items-center justify-between text-sm text-neutral-600 mb-4">
               <div>Q <strong>{idx + 1}</strong> / {sessionQs.length} • <strong>{q.domain}</strong></div>
-              <div>
-                First-try correct:{" "}
-                <strong>{Object.values(results).filter(r=>r.firstTryCorrect).length}</strong>
-              </div>
+              <div>First-try correct: <strong>{Object.values(results).filter(r=>r.firstTryCorrect).length}</strong></div>
             </div>
 
-            <h2 className="text-xl font-semibold mb-5 leading-snug">
-              {isV21(q) ? (q.question || q.prompt) : q.question}
-            </h2>
+            <h2 className="text-xl font-semibold mb-5 leading-snug">{isV21(q) ? (q.question || q.prompt) : q.question}</h2>
 
             <div className="grid gap-3">
-              {(q.choices || []).map((opt, i) => {
-                const disabled = !!eliminated[i];
-                return (
-                  <button
-                    key={i}
-                    onClick={() => onChoice(i)}
-                    disabled={disabled}
-                    className={`text-left border rounded-xl px-4 py-3 hover:bg-neutral-50 transition ${
-                      disabled ? "opacity-50 line-through" : ""
-                    }`}
-                  >
-                    <span className="font-semibold mr-2">{String.fromCharCode(65 + i)}.</span>
-                    {opt}
-                  </button>
-                );
-              })}
+              {(q.choices || []).map((opt, i) => (
+                <button
+                  key={i}
+                  onClick={() => onChoice(i)}
+                  disabled={!!eliminated[i]}
+                  className={`text-left border rounded-xl px-4 py-3 hover:bg-neutral-50 transition ${eliminated[i] ? 'opacity-50 line-through' : ''}`}
+                >
+                  <span className="font-semibold mr-2">{String.fromCharCode(65 + i)}.</span>{opt}
+                </button>
+              ))}
             </div>
 
-            {mode === "practice" && firstTryCorrect === false && (
-              <div className="mt-4 p-3 rounded-md bg-red-50 border border-red-200 text-red-800">
-                Not quite. Try another option.
-              </div>
+            {mode === 'practice' && firstTryCorrect === false && (
+              <div className="mt-4 p-3 rounded-md bg-red-50 border border-red-200 text-red-800">Not quite. Try another option.</div>
             )}
-
-            {mode === "practice" && firstTryCorrect === true && (
-              <div className="mt-4 p-3 rounded-md bg-green-50 border border-green-200 text-green-800">
-                Correct. {q.explanation ? <span className="text-neutral-800"> {q.explanation}</span> : null}
-              </div>
+            {mode === 'practice' && firstTryCorrect === true && (
+              <div className="mt-4 p-3 rounded-md bg-green-50 border border-green-200 text-green-800">Correct. {q.explanation ? <span className="text-neutral-800"> {q.explanation}</span> : null}</div>
             )}
 
             <div className="mt-6 flex items-center gap-3">
-              <button onClick={toggleFlag} className="px-3 py-1.5 rounded-md border">
-                {flagged[q.id] ? "Unflag" : "Flag for review"}
-              </button>
-              <button onClick={nextQuestion} className="px-3 py-1.5 rounded-md border">
-                Next
-              </button>
+              <button onClick={toggleFlag} className="px-3 py-1.5 rounded-md border">{flagged[q.id] ? 'Unflag' : 'Flag for review'}</button>
+              <button onClick={nextQuestion} className="px-3 py-1.5 rounded-md border">Next</button>
             </div>
           </section>
         )}
@@ -327,35 +389,22 @@ export default function App() {
             <h2 className="text-xl font-semibold mb-3">Session summary</h2>
             <div className="grid md:grid-cols-3 gap-4 mb-6">
               <Stat label="Questions" value={String(sessionQs.length)} />
-              <Stat
-                label="First-try correct"
-                value={String(Object.values(results).filter(r => r.firstTryCorrect).length)}
-              />
-              <Stat
-                label="Accuracy (first try)"
-                value={
-                  sessionQs.length
-                    ? `${Math.round((Object.values(results).filter(r=>r.firstTryCorrect).length / sessionQs.length) * 100)}%`
-                    : "0%"
-                }
-              />
+              <Stat label="First-try correct" value={String(Object.values(results).filter(r => r.firstTryCorrect).length)} />
+              <Stat label="Accuracy (first try)" value={sessionQs.length ? `${Math.round((Object.values(results).filter(r=>r.firstTryCorrect).length / sessionQs.length) * 100)}%` : "0%"} />
             </div>
 
-            {mode === "exam" && (
+            {mode === 'exam' && (
               <div className="border rounded-lg p-3">
                 <h3 className="font-medium mb-2">Review answers</h3>
                 <ul className="space-y-2">
-                  {sessionQs.map((q,i) => {
-                    const r = results[q.id];
-                    const cIdx = correctIndex(q);
+                  {sessionQs.map((question,i) => {
+                    const cIdx = correctIndex(question);
                     return (
-                      <li key={q.id} className="p-3 rounded-md border">
-                        <div className="text-xs text-neutral-600 mb-1">Q{i+1} • {q.domain}</div>
-                        <div className="font-medium mb-1">{isV21(q) ? (q.question || q.prompt) : q.question}</div>
-                        <div className="text-sm">
-                          Correct: <strong>{q?.choices?.[cIdx] ?? ""}</strong>
-                        </div>
-                        {q.explanation && <div className="text-sm mt-1 text-neutral-700">{q.explanation}</div>}
+                      <li key={question.id} className="p-3 rounded-md border">
+                        <div className="text-xs text-neutral-600 mb-1">Q{i+1} • {question.domain}</div>
+                        <div className="font-medium mb-1">{isV21(question) ? (question.question || question.prompt) : question.question}</div>
+                        <div className="text-sm">Correct: <strong>{question?.choices?.[cIdx] ?? ''}</strong></div>
+                        {question.explanation && <div className="text-sm mt-1 text-neutral-700">{question.explanation}</div>}
                       </li>
                     );
                   })}
@@ -364,7 +413,27 @@ export default function App() {
             )}
 
             <div className="mt-4 flex items-center gap-3">
-              <button onClick={exportSummary} className="px-4 py-2 rounded-xl bg-neutral-900 text-white hover:opacity-90">
+              <button onClick={() => {
+                const rows = [["id","domain","first_try_correct","tries","time_ms","chosen","question","correct","explanation"]];
+                sessionQs.forEach((question) => {
+                  const r = results[question.id];
+                  const stem = isV21(question) ? (question.question || question.prompt || "") : question.question;
+                  const cIdx = correctIndex(question);
+                  const correct = question?.choices?.[cIdx] ?? "";
+                  rows.push([
+                    question.id,
+                    question.domain || "",
+                    r ? String(r.firstTryCorrect) : "",
+                    r ? String(r.tries) : "",
+                    r ? String(r.timeMs) : "",
+                    r ? r.chosenHistory.join("|") : "",
+                    stem || "",
+                    correct || "",
+                    question.explanation || ""
+                  ]);
+                });
+                download(`pmp_session_${new Date().toISOString().slice(0,10)}.csv`, toCSV(rows));
+              }} className="px-4 py-2 rounded-xl bg-neutral-900 text-white hover:opacity-90">
                 Export summary CSV
               </button>
               <button onClick={() => { setFinished(false); setStarted(false); }} className="px-4 py-2 rounded-xl border">
