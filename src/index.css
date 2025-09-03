@@ -3,3 +3,69 @@
 @tailwind utilities;
 
 /* Custom styles can go here. */
+
+
+/* --- Visual polish utilities (safe, no logic) --- */
+.glass {
+  background-color: rgb(255 255 255 / 0.8);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color .2s ease, box-shadow .2s ease, opacity .2s ease;
+  outline: none;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+.btn-primary:hover { background: #1d4ed8; }
+.btn-primary:focus { box-shadow: 0 0 0 3px rgba(96,165,250,0.6); }
+
+.btn-ghost {
+  background: transparent;
+  color: #374151;
+}
+.btn-ghost:hover { background: #f3f4f6; }
+.btn-ghost:focus { box-shadow: 0 0 0 3px rgba(209,213,219,0.7); }
+
+.progress-wrap {
+  height: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: #e5e7eb;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #2563eb;
+  transition: width .3s ease-out;
+}
+
+/* Clean scrollbars (desktop only) */
+@media (hover: hover) {
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 9999px;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+}
